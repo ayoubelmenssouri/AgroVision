@@ -11,12 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('grains', function (Blueprint $table) {
+        Schema::create('shooping_carts', function (Blueprint $table) {
             $table->id();
-            $table->string('name_grain');
-            $table->double('price_unit', 0, 3);
-            $table->string('image_url', 200)->nullable();
-            $table->timestamps();
+            $table->bigInteger('id_produit')->unique();
+            $table->timestamp('added_to_cart')->nullable();
+            $table->timestamp('buyet_at')->nullable();
+            $table->index('id_produit');
         });
     }
 
@@ -25,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('grains');
+        Schema::dropIfExists('shooping_carts');
     }
 };

@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="styleshet">
 </head>
 
 <body>
@@ -88,11 +89,14 @@
                 <a href="/contact" class="nav-item nav-link">Contact</a>
                 <a href="/login" class="nav-item nav-link" style="margin-top:-100 px">login</a>
             </div>
+            <div style="">
+                <a href="/list">   <i class="fa badgee fa-lg" value=5 style="color: black">&#xf218;</i></a>
+               
+            </div>
         </div>
     </nav>
     
-   
-
+ 
     <!-- Hero Start -->
    
     <!-- product Start -->
@@ -122,6 +126,21 @@
     </main>
             
     </div>
+    <style>
+        .badgee:after{
+            content:attr(value);
+            font-size:12px;
+            color: #fff;
+            background: red;
+            border-radius:50%;
+            padding: 0 5px;
+            position:relative;
+            left:-8px;
+            top:-10px;
+            opacity:0.9;
+        }
+    
+    </style>
    
     <!-- product End -->
 

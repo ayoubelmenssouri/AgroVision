@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
-use App\models\Grains;
+use App\models\Products;
 class GrainController extends Controller
 {
     //public function index (){
@@ -15,9 +15,14 @@ class GrainController extends Controller
        //return view("/grain",['grains'=>$grains]);
     }
 
-    public function get_grain(){
-      $grains=Grains::all();
+    /*public function get_grain(){
+      $grains=products::all();
       $grains->sortBy('id');
-      return view("/grain",['grains'=>$grains]);
+      //return view("/grain",['grains'=>$grains]);
+      return view(dd($grains));
+    }*/
+    public function get_grain(){
+      $grains=products::all()->Categories;
+      return view(dd($grains));
     }
 }

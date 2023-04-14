@@ -5,7 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Phosphates extends Model
+class Products extends Model
 {
     use HasFactory;
+
+    public function categorie()
+    {
+        return $this->belongsTo(Categories::class);
+    }
+   
 }

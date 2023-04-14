@@ -11,12 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('phosphates', function (Blueprint $table) {
-            $table->id();
-            $table->string('name_phosphate');
-            $table->double('price_unit', 0, 3);
-            $table->string('image_url', 200)->nullable();
-            $table->timestamps();
+        Schema::create('categories', function (Blueprint $table) {
+            $table->id()->foreign('Products.id_categories');
+            $table->string('label_categories');
         });
     }
 
@@ -25,6 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('phosphates');
+        Schema::dropIfExists('categories');
     }
 };
