@@ -1,0 +1,75 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "Tomate",
+        "category": "Légume",
+        "quantity": 500,
+        "price_per_kg": 2.5
+      },
+      {
+        "id": 2,
+        "name": "Pomme",
+        "category": "Fruit",
+        "quantity": 300,
+        "price_per_kg": 3.0
+      },
+      {
+        "id": 3,
+        "name": "Blé",
+        "category": "Céréale",
+        "quantity": 1000,
+        "price_per_kg": 1.2
+      },
+      {
+        "id": 4,
+        "name": "Laitue",
+        "category": "Légume",
+        "quantity": 200,
+        "price_per_kg": 1.8
+      },
+      {
+        "id": 5,
+        "name": "Carotte",
+        "category": "Légume",
+        "quantity": 600,
+        "price_per_kg": 1.5
+      },
+      {
+        "id": 6,
+        "name": "Raisin",
+        "category": "Fruit",
+        "quantity": 150,
+        "price_per_kg": 4.0
+      },
+      {
+        "id": 7,
+        "name": "Pomme de terre",
+        "category": "Légume",
+        "quantity": 800,
+        "price_per_kg": 1.0
+      },
+      {
+        "id": 8,
+        "name": "Riz",
+        "category": "Céréale",
+        "quantity": 1200,
+        "price_per_kg": 1.5
+      },
+      {
+        "id": 9,
+        "name": "Fraise",
+        "category": "Fruit",
+        "quantity": 100,
+        "price_per_kg": 5.0
+      },
+      {
+        "id": 10,
+        "name": "Maïs",
+        "category": "Céréale",
+        "quantity": 900,
+        "price_per_kg": 2.0
+      }
+    ]
+  }
+  
